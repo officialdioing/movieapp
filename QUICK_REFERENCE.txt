@@ -1,0 +1,249 @@
+================================================================================
+                    D-EYETURN DESIGN SYSTEM - QUICK REFERENCE
+================================================================================
+
+BRAND COLORS:
+  Primary Purple    #6C5CE7     Primary Blue       #74B9FF    Primary Cyan   #00CEC9
+  ████████████      ████████████     ████████████
+  
+BACKGROUND COLORS:
+  Dark Background   #0D0D0D     Card Background    #1A1A1A
+  ████████████      ████████████
+
+NETFLIX RED:        #E50914     STAR RATING:       #FFC107
+████████████        ████████████
+
+================================================================================
+TYPOGRAPHY
+
+FONT FAMILY: SF Pro Display (or system fonts: -apple-system, BlinkMacSystemFont, Segoe UI, Poppins)
+
+Headline Large:     34px weight:800  letter-spacing:-1.0    line-height:1.1
+Title Large:        20px weight:700  letter-spacing:-0.4
+Body Medium:        15px weight:500  letter-spacing:0.1
+Movie Title Hero:   40px weight:900  letter-spacing:-1
+Movie Card Title:   12px weight:600
+Button/Label:       14px weight:600
+Genre Text:         10px weight:500
+
+================================================================================
+GRADIENT DEFINITIONS
+
+Brand Gradient:     Purple → Blue → Cyan                        (All uses)
+
+Card Gradient 1:    #667eea → #764ba2 → #6C5CE7 → #74B9FF     (Featured cards)
+                    (Top-Left to Bottom-Right)
+
+Card Gradient 2:    #2c1810 → #8B0000 → #000000               (Card alternatives)
+                    (Top to Bottom)
+
+Card Gradient 3:    #2C2C54 → #40407A → #706FD3               (Card alternatives)
+                    (Top to Bottom)
+
+Dark Overlay:       transparent → rgba(0,0,0,0.13) → rgba(0,0,0,0.4) → rgba(0,0,0,0.87)
+                    (For image overlays)
+
+================================================================================
+KEY COMPONENTS
+
+FEATURED MOVIE CARD:
+  Height:            420px
+  Border Radius:     24px
+  Title Font Size:   40px weight:900
+  Button States:     Primary=White bg + Black text, Secondary=Gray transparent
+  Animation:        Scale 0.9→1.0 + Slide from bottom + Pulse glow 2000ms
+  Rotation:         Every 3 minutes
+
+MOVIE GRID CARD:
+  Size:              160x200px
+  Border Radius:     12px
+  Shadow:            0 4px 8px rgba(0,0,0,0.3)
+  Title:             12px weight:600 (white)
+  Genres:            10px weight:500 (white 0.7 opacity)
+  Rating Badge:      Top-right, dark bg with star
+
+FILTER PILLS:
+  Inactive:          Background white 0.08 + Border white 0.15
+  Active:            Gradient purple→blue + Shadow 0 4px 12px rgba(108,92,231,0.4)
+  Border Radius:     20px
+  Padding:           16px horizontal, 8px vertical
+  Animation:         400ms easeOutExpo
+
+BOTTOM NAVIGATION:
+  Height:            100px
+  Items:             4 (Home, Discover, Inbox, Profile)
+  Icon Size:         20px
+  Active Color:      #74B9FF (with glow shadow)
+  Indicator:         6px × 2px line
+  Animation:         Scale 1.0→1.1 elasticOut
+
+GENRE CHIP:
+  Background:        White 0.2
+  Border:            1px white 0.3
+  Border Radius:     12px
+  Padding:           12px horizontal, 6px vertical
+  Font:              12px weight:600
+
+================================================================================
+COLOR OPACITY LEVELS
+
+TEXT OPACITY:
+  Primary:           rgba(255, 255, 255, 1.0)
+  Secondary:         rgba(255, 255, 255, 0.9)
+  Tertiary:          rgba(255, 255, 255, 0.7)
+  Disabled:          rgba(255, 255, 255, 0.5)
+
+BACKGROUND OPACITY:
+  Strong:            rgba(0, 0, 0, 0.87)
+  Medium:            rgba(0, 0, 0, 0.6)
+  Light:             rgba(0, 0, 0, 0.4)
+  Very Light:        rgba(0, 0, 0, 0.13)
+
+COMPONENT OPACITY:
+  Button Bg:         rgba(255, 255, 255, 0.08)
+  Border:            rgba(255, 255, 255, 0.15)
+  Chip:              rgba(255, 255, 255, 0.2)
+
+================================================================================
+SPACING SYSTEM (4px base unit)
+
+Micro:              4px
+Extra small:        6px
+Small:              8px, 12px
+Medium:             16px, 20px, 24px
+Large:              32px
+Extra large:        48px, 64px
+
+STANDARD PADDING:
+  Header:            24px horizontal, 20px vertical
+  Content:           20-24px horizontal
+  Section Gap:       32px vertical
+  Item Spacing:      12px
+  Border Radius:     6px (buttons), 12px (cards), 20px (pills), 24px (features)
+
+================================================================================
+ANIMATIONS & TRANSITIONS
+
+PAGE TRANSITIONS:
+  Default:           Fade (300ms)
+  To Profile:        Slide from right (300ms)
+  To Search:         Fade + Slide from top (300ms)
+
+COMPONENT ANIMATIONS:
+  Header Fade:       1000ms easeOutExpo
+  Card Scale+Slide:  1400ms elasticOut
+  Pulse Glow:        2000ms loop (1.0→1.05)
+  Interaction:       200-300ms easeOut
+  Hover:             100-200ms easeOut
+
+HAPTIC FEEDBACK:
+  Light:             Most taps
+  Medium:            Play button
+  Selection:         Filter pills
+
+================================================================================
+SCREENSHOTS / SCREEN LAYOUTS
+
+HOME SCREEN:
+  [Header with Logo + Search]
+  [Category Filter Pills (horizontal scroll)]
+  [Featured Movie Card - rotating]
+  [Editor's Picks (horizontal scroll)]
+  [Viral Right Now Section]
+  [Continue Watching]
+  [Multiple Category Sections]
+  [Bottom Navigation - Fixed]
+
+MOVIE DETAIL SCREEN:
+  [Sliver AppBar with Backdrop + Back/Share buttons]
+  [Movie Info]
+  [Action Buttons]
+  [Overview]
+  [Cast]
+  [Trailers]
+  [Reviews]
+  [Similar Movies]
+
+PROFILE SCREEN:
+  [Header]
+  [Profile Picture + Info]
+  [Stats]
+  [Settings]
+  [Account Management]
+
+================================================================================
+CSS/TAILWIND QUICK SETUP
+
+CSS VARIABLES:
+  --primary-purple: #6C5CE7;
+  --primary-blue: #74B9FF;
+  --primary-cyan: #00CEC9;
+  --bg-dark: #0D0D0D;
+  --bg-card: #1A1A1A;
+
+TAILWIND COLORS:
+  'brand-purple': '#6C5CE7'
+  'brand-blue': '#74B9FF'
+  'brand-cyan': '#00CEC9'
+  'bg-dark': '#0D0D0D'
+  'bg-card': '#1A1A1A'
+
+TAILWIND OPACITY:
+  text-white       (100%)
+  text-white/90    (90%)
+  text-white/70    (70%)
+  text-white/50    (50%)
+  bg-white/8       (8%)
+  bg-white/20      (20%)
+
+================================================================================
+DESIGN PRINCIPLES
+
+1. GRADIENT-HEAVY              Use gradients liberally
+2. DARK FOUNDATION             #0D0D0D base, light overlays for depth
+3. SMOOTH MOTION               Elastic and expo easing curves
+4. BOLD TYPOGRAPHY             Heavy weights (600, 700, 800, 900)
+5. TRANSPARENT LAYERING        Opacity hierarchy instead of color changes
+6. PRECISE SPACING             Consistent grid units
+7. ACCESSIBILITY FIRST         WCAG AAA contrast, haptic feedback
+8. MICRO-INTERACTIONS          Every interaction has feedback
+
+================================================================================
+DOCUMENTATION FILES
+
+START HERE:
+  1. DESIGN_SUMMARY.md               Quick overview (5-10 min)
+  2. COLOR_PALETTE_REFERENCE.md      Color values (3-5 min)
+  3. WEB_IMPLEMENTATION_GUIDE.md      CSS implementation (20-30 min)
+  4. DESIGN_SYSTEM.md                Complete reference (15-20 min)
+  5. DESIGN_DOCUMENTATION_INDEX.md   Navigation guide
+
+PATH: /home/xi6th/Documents/Projects/dioing/flutter/movies/
+
+================================================================================
+DEVELOPER QUICK NOTES
+
+Q: Exact colors important?
+A: YES for brand colors. Purple/Blue/Cyan are carefully chosen.
+
+Q: Match animation timings?
+A: Aim for it, but 300-400ms is standard for most interactions.
+
+Q: Use exact fonts?
+A: SF Pro Display ideal, but system fonts with tight spacing work.
+
+Q: Match spacing exactly?
+A: YES for consistency. Use 4px base unit.
+
+Q: Dark mode only?
+A: For MVP yes. Light mode can be added later.
+
+Q: Glow effects too subtle?
+A: Increase blur radius in box-shadow, increase opacity.
+
+Q: Animations feel sluggish?
+A: Reduce duration by 100-200ms, use elasticOut curve.
+
+================================================================================
+                         BUILD WITH CONFIDENCE!
+================================================================================
